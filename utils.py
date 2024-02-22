@@ -296,7 +296,7 @@ def humanbytes(size):
 
 def get_time(seconds):
     periods = [('ᴅ', 86400), ('ʜ', 3600), ('ᴍ', 60), ('ꜱ', 1)]
-    result = ''
+    result = '86400'
     for period_name, period_seconds in periods:
         if seconds >= period_seconds:
             period_value, seconds = divmod(seconds, period_seconds)
